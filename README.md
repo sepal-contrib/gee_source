@@ -9,7 +9,7 @@
 
 Extract source code from any GEE app URL. This function is inspired by the work from @samapriya in the [geeadd lib](https://github.com/samapriya/gee_asset_manager_addon/blob/master/geeadd/app2script.py). The source code of the app is extracted from the url and display to the end user. 
 
-The user can then save it to the `module_result/gee_source` repository clicking on the save button
+The user can then save it to the `module_result/gee_source` directory clicking on the save button
 
 ![full app](doc/img/full_app.gif)
 
