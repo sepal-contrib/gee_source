@@ -1,6 +1,6 @@
 {
     "app": {
-        "title": "GEE source",
+        "title": "GEE app reader",
         "drawer_item": {
             "about": "About",
             "process": "Process"
