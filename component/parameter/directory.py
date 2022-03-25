@@ -7,3 +7,5 @@ module_dir = Path.home() / "module_results"
 module_dir.mkdir(exist_ok=True)
 
 # add all the directory that will be used in the app.
+result_dir = module_dir / "gee_source"
+result_dir.mkdir(exist_ok=True)

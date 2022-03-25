@@ -1,10 +1,12 @@
 GEE source
 ==========
 
-.. warning::
+This application allows the user to display the source code of any Google Earth Engine based application. 
+THe code is parsed and display in the most readable way using the Pygments code highlighter
 
-    The english documentation of the module have not been set.
+Usage
+-----
 
-.. tip::
+Provide the url of the application you want to analyse (e.g.: https://glad.earthengine.app/view/s2-forest-alerts) and click on :btn:`<fas fa-check>Apply`.
 
-    Please open an issue on their repository : https://github.com/12rambau/gee_source/issues/new
+Once the code is displayed on your screen you can save it in you SEPAL folders by clicking on :btn:`<fas fa-save>Save`.
