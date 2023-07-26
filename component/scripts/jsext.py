@@ -1,5 +1,4 @@
 import requests
-import csv
 from bs4 import BeautifulSoup
 
 from component import parameter as cp
@@ -11,8 +10,7 @@ https://github.com/samapriya/gee_asset_manager_addon/blob/master/geeadd/app2scri
 
 
 def jsext(asset):
-    """read the content of the asset and export it as str"""
-
+    """Read the content of the asset and export it as str."""
     # transform the asset link into a url
     url_asset = asset
 
@@ -23,7 +21,7 @@ def jsext(asset):
 
     output = ""
     for articles in soup.find_all("script"):
-        if not articles.string == None and articles.string.strip().startswith("init"):
+        if articles.string is not None and articles.string.strip().startswith("init"):
             url = articles.string.strip().split('"')[1]
 
             # stop if it's not a url
@@ -42,8 +40,7 @@ def jsext(asset):
 
 
 def save(code, path):
-    """save the code in the appropriate file"""
-
+    """Save the code in the appropriate file."""
     file = cp.result_dir / f"{path}.js"
 
     if file.is_file():
