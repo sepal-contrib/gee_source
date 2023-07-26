@@ -1,13 +1,9 @@
-from pygments import highlight
+from pygments import highlight, lexers
 from pygments.formatters import HtmlFormatter
-from pygments import lexers
 
 
 def html(raw_code):
-    """
-    format the proposed javascript code using pygments
-    """
-
+    """Format the proposed javascript code using pygments."""
     # convert into html code
     formatter = HtmlFormatter()
     lex = lexers.get_lexer_by_name("javascript")

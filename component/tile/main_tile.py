@@ -2,7 +2,6 @@ from pathlib import Path
 
 from sepal_ui import sepalwidgets as sw
 from sepal_ui.scripts import utils as su
-import ipyvuetify as v
 
 from component import model as cm
 from component import scripts as cs
@@ -95,8 +94,7 @@ class MainTile(sw.Tile):
         return
 
     def _sanitize_filename(self, widget, event, data):
-        """change the filename to ensure that only valid character are used"""
-
+        """change the filename to ensure that only valid character are used."""
         # exit if empty
         if self.filename.v_model is None:
             return
