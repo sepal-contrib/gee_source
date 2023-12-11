@@ -1,0 +1,23 @@
+[project]
+version = "0.1.0"
+
+[tool.commitizen]
+version = "0.1.0"
+update_changelog_on_bump = true
+changelog_file = "CHANGELOG.md"
+changelog_incremental = true
+version_files = [
+    "pyproject.toml:version",
+]
+
+[tool.ruff]
+ignore-init-module-imports = true
+fix = true
+select = ["E", "F", "W", "I", "D", "RUF"]
+ignore = ["E501","F403","D107","D100","D101","D102","D103","D104"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.pydocstyle]
+convention = "google"

@@ -1,20 +1,10 @@
-# these libs are requested to build common python libs 
-# if you are an advance user and are sure to not use them you can comment the following lines
-wheel
-Cython
-pybind11
-pre-commit
+# these libs are requested to build application env
+voila
+toml
+earthengine-api
 
-# comment if you don't want to run your module with GEE in SEPAL
-git+https://github.com/openforis/earthengine-api.git@v0.1.270#egg=earthengine-api&subdirectory=python
-
-# the base lib to run any sepal_ui based app 
-# don't forget to fix it to a specific version when you're app is ready
-sepal_ui==2.6.2
-
+sepal_ui==2.17
 
 # custom libs
-beautifulsoup4==4.10.0
-ipyvuetify==1.8.1
-requests==2.22.0
-traitlets==5.1.1
+beautifulsoup4
+requests

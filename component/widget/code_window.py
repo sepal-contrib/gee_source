@@ -3,9 +3,7 @@ from traitlets import Unicode
 
 
 class CodeWindow(v.VuetifyTemplate):
-    """
-    code_window display pure html
-    """
+    """Code_window display pure html."""
 
     template = Unicode(
         """
