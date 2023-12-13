@@ -10,7 +10,6 @@ from component import widget as cw
 
 class MainTile(sw.Tile):
     def __init__(self):
-
         # create the model
         self.model = cm.Model()
 
@@ -50,10 +49,10 @@ class MainTile(sw.Tile):
         self.alert = self.computation_alert
 
         # manually decorate functions
-        self.on_validate = su.loading_button(self.alert, self.validate, True)(
+        self.on_validate = su.loading_button(self.alert, self.validate)(
             self.on_validate
         )
-        self.on_save = su.loading_button(self.alert, self.save, True)(self.on_save)
+        self.on_save = su.loading_button(self.alert, self.save)(self.on_save)
 
         # js behaviour
         self.validate.on_event("click", self.on_validate)
@@ -61,7 +60,6 @@ class MainTile(sw.Tile):
         self.filename.on_event("blur", self._sanitize_filename)
 
     def on_validate(self, widget, event, data):
-
         # check inputs
         if not self.alert.check_input(self.model.app_url, "missing asset"):
             return
@@ -80,7 +78,6 @@ class MainTile(sw.Tile):
         return
 
     def on_save(self, widget, event, data):
-
         # check inputs
         if not self.alert.check_input(self.model.raw_code, "missing code"):
             return
