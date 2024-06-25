@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+*nox_ui.ipynb
+*Untitled*
 
 # Distribution / packaging
 .Python
