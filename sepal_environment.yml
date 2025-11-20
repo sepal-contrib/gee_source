@@ -1,0 +1,14 @@
+name: gee_source
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pyproj  # Always include to avoid PROJ conflicts
+  - toml
+  - rasterio
+  - beautifulsoup4
+  - pip
+  - pip:
+    - sepal_ui==2.21.0
+    - git+https://github.com/openforis/earthengine-api.git@v1.1.5rc0#egg=earthengine-api&subdirectory=python
