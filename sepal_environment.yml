@@ -9,6 +9,7 @@ dependencies:
   - rasterio
   - beautifulsoup4
   - pip
+  - gdal=3.8.3
   - pip:
     - sepal_ui==2.21.0
     - git+https://github.com/openforis/earthengine-api.git@v1.1.5rc0#egg=earthengine-api&subdirectory=python
